@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<channel>
+		<title>Ottava Blog</title>
+		<description>The latest updates, tricks, and tips on data management, business intelligence, and data visualization, from Ottava.</description>		
+		<link>https://blog.ottava.io</link>
+		<atom:link href="https://blog.ottava.iofeed.xml" rel="self" type="application/rss+xml" />
+		
+			<item>
+				<title>Unlocking Data Dynamics: Understanding the Power of Pivoting and Un-pivoting</title>
+				
+					<dc:creator>Vicky Pham</dc:creator>
+				        
+				<description>In this blog post, we explore various data analysis techniques, exploring the intricacies of pivot and unpivot methods to transform structured data efficiently.</description>
+				<pubDate>Tue, 02 Jan 2024 00:00:00 +0000</pubDate>
+				<link>https://blog.ottava.io/p/pivot-vs-unpivot.html</link>
+				<guid isPermaLink="true">https://blog.ottava.io/p/pivot-vs-unpivot.html</guid>
+			</item>
+		
+			<item>
+				<title>Why Ottava?</title>
+				
+					<dc:creator>Vicky Pham</dc:creator>
+				        
+				<description>In a world where spreadsheets and databases can be a real snooze-fest, Ottava is here to set your data dreams on fire.</description>
+				<pubDate>Thu, 07 Dec 2023 00:00:00 +0000</pubDate>
+				<link>https://blog.ottava.io/p/why-ottava.html</link>
+				<guid isPermaLink="true">https://blog.ottava.io/p/why-ottava.html</guid>
+			</item>
+		
+	</channel>
+</rss>
