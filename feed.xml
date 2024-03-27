@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<channel>
+		<title>Ottava Blog</title>
+		<description>The latest updates, tricks, and tips on data management, business intelligence, and data visualization, from Ottava.</description>		
+		<link>https://blog.ottava.io</link>
+		<atom:link href="https://blog.ottava.iofeed.xml" rel="self" type="application/rss+xml" />
+		
+			<item>
+				<title>A Comprehensive Guide to Visualization Tools, Examples, and Interactive Insights</title>
+				
+					<dc:creator>Samantha K</dc:creator>
+				        
+				<description>Explore a comprehensive guide on visualization tools and interactive insights. Dive into the world of data visualization for a deeper understanding and effective communication of information.</description>
+				<pubDate>Wed, 27 Mar 2024 00:00:00 +0000</pubDate>
+				<link>https://blog.ottava.io/p/data-visualization-guide.html</link>
+				<guid isPermaLink="true">https://blog.ottava.io/p/data-visualization-guide.html</guid>
+			</item>
+		
+			<item>
+				<title>Maximizing Insights: The Advantages of Building Interactivity into Data Visualizations</title>
+				
+					<dc:creator>Susan Yang</dc:creator>
+				        
+				<description>Unlocking data&apos;s potential, this article demonstrates how interactive visualizations empower users to extract insights efficiently, transforming exploration and understanding.</description>
+				<pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate>
+				<link>https://blog.ottava.io/p/interactive-and-exploration-visualization.html</link>
+				<guid isPermaLink="true">https://blog.ottava.io/p/interactive-and-exploration-visualization.html</guid>
+			</item>
+		
+			<item>
+				<title>Mastering Data Visualization - Choosing the Right Graphs for Impactful Insights</title>
+				
+					<dc:creator>Susan Yang</dc:creator>
+				        
+				<description>Dive into effective data visualization techniques with precise examples, guiding optimal chart selection for impactful storytelling and insightful analysis.</description>
+				<pubDate>Wed, 13 Mar 2024 00:00:00 +0000</pubDate>
+				<link>https://blog.ottava.io/p/data-visualization-examples.html</link>
+				<guid isPermaLink="true">https://blog.ottava.io/p/data-visualization-examples.html</guid>
+			</item>
+		
+			<item>
+				<title>Harness Smart Copy/Paste Across All Your Spreadsheets into Ottava</title>
+				
+					<dc:creator>Wenning Hsu</dc:creator>
+				        
+				<description>Experience the advantages of reconstructing your multi-dimensional data into Ottava Pivot Grid with the latest smart copy/paste feature.</description>
+				<pubDate>Tue, 12 Mar 2024 00:00:00 +0000</pubDate>
+				<link>https://blog.ottava.io/p/copy-paste.html</link>
+				<guid isPermaLink="true">https://blog.ottava.io/p/copy-paste.html</guid>
+			</item>
+		
+			<item>
+				<title>Unveiling the Power of Data Visualization Software, Tools, and Platforms</title>
+				
+					<dc:creator>Susan Yang</dc:creator>
+				        
+				<description>Discover transformative data visualization with Looker, Ottava, Power BI, Tableau, and D3.js—revolutionize industries, empower decisions, and unlock insights from complex datasets.</description>
+				<pubDate>Wed, 06 Mar 2024 00:00:00 +0000</pubDate>
+				<link>https://blog.ottava.io/p/data-visualization-tools.html</link>
+				<guid isPermaLink="true">https://blog.ottava.io/p/data-visualization-tools.html</guid>
+			</item>
+		
+			<item>
+				<title>Unveiling the Power of Data Analysis: Tools, Techniques, and Visualization Insights for Business Intelligence</title>
+				
+					<dc:creator>Samantha K</dc:creator>
+				        
+				<description>Explore the dynamic world of data analysis with insights on tools, techniques, and visualization for business intelligence. Uncover the power of data-driven decision-making in this comprehensive article.</description>
+				<pubDate>Wed, 28 Feb 2024 00:00:00 +0000</pubDate>
+				<link>https://blog.ottava.io/p/data-analysis.html</link>
+				<guid isPermaLink="true">https://blog.ottava.io/p/data-analysis.html</guid>
+			</item>
+		
+			<item>
+				<title>Unlocking Insights Directly from Multi-dimensional Reports</title>
+				
+					<dc:creator>Jean Yen</dc:creator>
+				        
+				<description>Ottava converts complex, multi-dimensional reports into structured, tabular data, enabling deeper analysis and visualization, unleashing the full potential of insights</description>
+				<pubDate>Mon, 26 Feb 2024 00:00:00 +0000</pubDate>
+				<link>https://blog.ottava.io/p/reports.html</link>
+				<guid isPermaLink="true">https://blog.ottava.io/p/reports.html</guid>
+			</item>
+		
+			<item>
+				<title>Mastering Data-Driven Decision Making: Unleashing the Power of Analytics</title>
+				
+					<dc:creator>Samantha K</dc:creator>
+				        
+				<description>Master the art of data-driven decision making with insights on data analytics techniques, data visualization tools, and real-world success stories.</description>
+				<pubDate>Thu, 22 Feb 2024 00:00:00 +0000</pubDate>
+				<link>https://blog.ottava.io/p/decision-making.html</link>
+				<guid isPermaLink="true">https://blog.ottava.io/p/decision-making.html</guid>
+			</item>
+		
+			<item>
+				<title>A Comprehensive Guide to Business Intelligence</title>
+				
+					<dc:creator>Samantha K</dc:creator>
+				        
+				<description>Explore the world of Business Intelligence, from implementation stages to tools, trends, and real-world applications.</description>
+				<pubDate>Wed, 07 Feb 2024 00:00:00 +0000</pubDate>
+				<link>https://blog.ottava.io/p/business-intelligence.html</link>
+				<guid isPermaLink="true">https://blog.ottava.io/p/business-intelligence.html</guid>
+			</item>
+		
+			<item>
+				<title>Decoding Data Analysis: Transforming Cross-Tabulation into Structured Tabular Tables</title>
+				
+					<dc:creator>Henri Chen</dc:creator>
+				        
+				<description>Henri, Founder of Ottava, explains the detailed process of converting cross-tabulation into structured tabular data for enhanced data analysis and insights.</description>
+				<pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
+				<link>https://blog.ottava.io/p/Cross-Tabulation.html</link>
+				<guid isPermaLink="true">https://blog.ottava.io/p/Cross-Tabulation.html</guid>
+			</item>
+		
+	</channel>
+</rss>
