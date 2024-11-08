@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LZ8TEVCDEC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-LZ8TEVCDEC');
+    </script>
+
+    <!-- meta tag for social website: facebook -->
+    <meta property="og:title" content="Decoding Data Analysis: Transforming Cross-Tabulation into Structured Tabular Tables">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://blog.ottava.io/p/Cross-Tabulation.html">
+    <meta property="og:image" content="https://blog.ottava.io2024-02/01-cross-tabulation-cover.png">
+    <meta property="og:description" content="">
+    <meta property="og:site_name" content="Ottava Blog">
+    <meta property="og:locale" content="en_us">
+
+    <meta name="keywords" content="Ottava, data analytics, Ottava blog, no code app, data management, spreadsheets, business intelligence, data visualization, tips & tricks, excel alternatives">
+
+    
+      <meta property="article:modified_time" content="2024-02-01T00:00:00+00:00">
+      <meta property="article:published_time" content="2024-02-01T00:00:00+00:00">
+      <meta property="article:author" content="https://www.facebook.com/">
+      
+        <meta property="og:see_also" content="https://blog.ottava.io/p/data-diversity.html">
+      
+        <meta property="og:see_also" content="https://blog.ottava.io/p/data-visualization-trends.html">
+      
+        <meta property="og:see_also" content="https://blog.ottava.io/p/multi-dimensional-table.html">
+      
+    
+
+    
+      
+      <meta property="article:section" content="product">
+      
+    
+
+    
+      
+      <meta property="article:tag" content="pivot,">
+      
+      <meta property="article:tag" content="pivot">
+      
+      <meta property="article:tag" content="table,">
+      
+      <meta property="article:tag" content="data">
+      
+      <meta property="article:tag" content="analysis,">
+      
+      <meta property="article:tag" content="unpivot,">
+      
+      <meta property="article:tag" content="cross-tabulation,">
+      
+      <meta property="article:tag" content="tabular,">
+      
+      <meta property="article:tag" content="structured">
+      
+      <meta property="article:tag" content="tables">
+      
+    
+
+    <!-- meta tag for social website: twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Decoding Data Analysis: Transforming Cross-Tabulation into Structured Tabular Tables">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="https://blog.ottava.io2024-02/01-cross-tabulation-cover.png">
+    <meta name="twitter:url" content="https://blog.ottava.io/p/Cross-Tabulation.html">
+
+    <meta name="description" content="">
+
+    <!-- meta tag for social website: search engine -->
+    
+
+    <link rel="canonical" href="https://blog.ottava.io/p/Cross-Tabulation.html">
+
+    
+      <link rel="next" href="https://blog.ottava.io/p/business-intelligence.html" title="A Comprehensive Guide to Business Intelligence">
+    
+
+    
+      <link rel="prev" href="https://blog.ottava.io/p/beyond-pivot.html" title="Beyond Pivot Tables: A Deep Dive into Unpivoting Techniques">
+    
+
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Decoding Data Analysis: Transforming Cross-Tabulation into Structured Tabular Tables</title>
+
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta charset="utf-8" />
+
+    <link rel="canonical" href="https://blog.ottava.io/p/Cross-Tabulation.html">
+    <link rel="alternate" type="application/rss+xml" title="Ottava Blog" href="https://blog.ottava.io/feed.xml" />
+
+    <link rel="shortcut icon" type="image/png" href="https://blog.ottava.io/img/fav.png?v1"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Rubik:wght@500&display=swap" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" type="text/css" href="https://blog.ottava.io/css/inter/interfonts.min.css" /> -->
+	  <!-- <link rel="stylesheet" type="text/css" href="https://blog.ottava.io/css/ottavafonts.min.css" /> -->
+	  <link rel="stylesheet" type="text/css" href="https://blog.ottava.io/css/font-awesome/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://blog.ottava.io/css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://blog.ottava.io/css/blog.min.css?1731037371351092306" />
+    <link rel="stylesheet" type="text/css" href="https://blog.ottava.io/css/main.css?1731037371351092306" />
+  </head>
+
+  <body data-init="blog" style="overscroll-behavior: none;">
+    <div id="wrap">
+      <header id="header-wrapper" role="banner" 
+        class="header-wrap navbar navbar-default navbar-fixed-top">
+        <div id="header">
+          <div id="ottava-logo" class="navbar-header">
+  <button id="menu-toggle" class="navbar-toggle x24 cmn-toggle-switch htx" type="button">
+    <span>toggle menu</span>
+  </button>
+  <div class="tw-flex tw-gap-2 tw-items-center tw-mr-8">
+    <h1 class="ottava-logo">
+      <a id="home" href="https://ottava.io/">
+        OTTAVA
+      </a>
+    </h1>
+    <span class="tw-text-xs tw-h-4.5 tw-leading-4.5 tw-px-2 tw-text-blue-500 tw-bg-blue-50 tw-rounded tw-font-semibold">Beta</span>
+  </div>
+</div>
+<nav class="navbar-collapse bs-navbar-collapse collapse" role="navigation">
+  <ul id="header-icons" class="nav navbar-nav">
+    <li class="item"><a href="/">Blog</a></li>
+    <!-- <div class="spacer"></div>
+    <li class="item button button-link"><a href="https://ottava.io/login">Log in</a></li>
+    <div style="height: 0px; width: 16px;"></div>
+    <li class="item button"><a href="https://ottava.io/singup">Sign up for Free</a></li> -->
+  </ul>
+</nav>
+
+        </div>
+        <div id="side-menu-toggle-wrap">
+          <div id="side-menu-toggle"></div>  
+        </div>
+        <div id="side-menu">
+          <a class="" href="/">ALL</a>
+          
+             
+             
+             
+            <a class="" 
+              href="/category/stories">STORIES</a>
+          
+             
+             
+             
+            <a class="" 
+              href="/category/data-management">DATA MANAGEMENT</a>
+          
+             
+             
+             
+            <a class="" 
+              href="/category/pivot-table">PIVOT TABLE</a>
+          
+             
+             
+             
+            <a class="active" 
+              href="/category/product">PRODUCT</a>
+          
+             
+             
+             
+            <a class="" 
+              href="/category/data-analysis">DATA ANALYSIS</a>
+          
+             
+             
+             
+            <a class="" 
+              href="/category/data-visualization">DATA VISUALIZATION</a>
+          
+             
+             
+             
+            <a class="" 
+              href="/category/feature">FEATURE</a>
+          
+        </div>
+      </header>
+
+      <div id="body" class="post-container">
+        <div id="post">
+  <article>
+    <div class="share-container">
+      <div class="share">
+        <div class="share-title" style="user-select: text;">share</div>
+        
+        <a href="http://twitter.com/share?text=Decoding Data Analysis: Transforming Cross-Tabulation into Structured Tabular Tables&url=https://blog.ottava.io/p/Cross-Tabulation.html&via=ottavaio" class="twitter" target="_blank"></a>
+        <a href="http://www.facebook.com/sharer.php?u=https://blog.ottava.io/p/Cross-Tabulation.html" class="fb" target="_blank"></a>
+        <a href="http://www.linkedin.com/shareArticle?mini=true&url=https://blog.ottava.io/p/Cross-Tabulation.html&title=Decoding Data Analysis: Transforming Cross-Tabulation into Structured Tabular Tables&summary=&source=" target="_blank" class="in"></a>
+      </div>
+    </div>
+    <h5 class="post-meta tw-text-center">
+      <span class="post-category"><a href="/category/product">product</a> | Feb 1, 2024</span>
+    </h5>
+    <h1 class="title tw-text-center">Decoding Data Analysis: Transforming Cross-Tabulation into Structured Tabular Tables</h1>
+    <span class="clearfix"></span>
+    <div class="markdown"><p><img src="/images/2024-02/01-cross-tabulation-cover.png" alt="a cross-tabulation table converted to tabular"></p>
+
+<p>Looking at the two tables below, which format do you find more intuitive and easier to read?
+<img src="/images/2024-02/01-tabular-vs-tabulation.png" alt="tabular vs. tabulation table"></p>
+
+<p>For years, people have been using spreadsheet software to create <a href="https://en.wikipedia.org/wiki/Contingency_table">cross-tabulated</a> (or contingency, multi-dimensional) reports or fill-forms. These reports neatly organize categories, dates, and other data points into levels of rows and columns, making them easy to read and analyze. </p>
+
+<p>However, each report represents just one viewpoint of the underlying data, such as the total sales revenue of each salesman in each quarter of the year. In order to show another viewpoint of the collected data (e.g., the average sales revenue of each quarter for each salesman in the year 2023), we then have to create a new report or fill-form from scratch with spreadsheet software again, which is tedious and error-prone.</p>
+
+<h2 id="the-pivot-table-solution">The Pivot Table Solution</h2>
+
+<p>To address the limitations of static cross-tabulated reports, software engineer Pito Salas introduced <a href="https://en.wikipedia.org/wiki/Pivot_table#History">the pivot table concept</a> in 1989 with Lotus Improv. Pivot tables allow users to dynamically restructure data, enabling them to view reports from different angles easily.</p>
+
+<h2 id="prerequisites-for-pivot-tables">Prerequisites for Pivot Tables</h2>
+
+<p>However, using pivot tables requires a well-structured tabular-style source data model, which can be challenging for general users. Unlike creating cross-tabulated reports, designing such a data model demands engineering training and can be time-consuming and complex.</p>
+
+<h2 id="unpivoting-the-cross-tabulated-table">Unpivoting the Cross-Tabulated Table</h2>
+
+<p>To unlock the full potential of cross-tabulated data, we need a way to rapidly analyze existing cross-tabulated reports and convert them into structured tabular-style data models for further analysis. This process, known as &quot;unpivoting,&quot; involves splitting the cross-tabulation into different parts and then reorganizing them into a structured format.</p>
+
+<p>By identifying and organizing the side labels, top labels, and numbers, we can create a structured tabular-style data model that represents the original cross-tabulation in a more flexible format.</p>
+
+<h3 id="a-step-by-step-transformation-example">A step-by-step transformation example</h3>
+
+<p>Consider a simple example: an ad hoc spreadsheet-made cross-tabulation report for student scores is laid out like the following. </p>
+
+<p><img src="/images/2024-02/01-example1.png" alt="a sample cross-tabulation report"></p>
+
+<p>With students being split into two teams on the left columns and subjects on the top row, the central cross matrix area is the corresponding scores of the subject for each student. On the right end columns, column E, are formulas for the total score of each student. On the bottom row (row 6) is the formula for the average score for all students for each subject.</p>
+
+<p>To convert the above cross-tabulation rectilinear displayed report into a corresponding structured tabular-style source data model, we have to split cross-tabulation into three parts first, i.e., the side labels, top labels, and numbers. </p>
+
+<p><img src="/images/2024-02/01-example2-areas.png" alt="a cross-tabulated table with labels"></p>
+
+<p>Each level of the side labels and top labels corresponds to a field of the resolved structured tabular-style data model. The number itself is also a field of the structured tabular-style data model.</p>
+
+<p><img src="/images/2024-02/01-example3-area-mapping.png" alt="a cross-tabulated table mapped with fields"></p>
+
+<p>As the above example cross-tabulation, there is a “Team” field(column A) for “Team A” and “Team B,” a “Student” field(column B) for “Bob,” “Ella,” “John,” and “Sally,” a “Subject” field(row 1) for “Math” and “Physics,” and the “Score” field(area C2:D5) for each corresponding number for each associated student and subject; as shown in the following resolved tabular-style data model:</p>
+
+<p><img src="/images/2024-02/01-example4-tabular.png" alt="a converted tabular table"></p>
+
+<p>Note that each number is uniquely associated with a combination of side labels and top labels, so it is most important to identify the number area first. As long as we identify the number area, the side label areas (to the left of the number area) and top label areas (to the top of the number area) are easily identified.</p>
+
+<h3 id="identifying-the-number-area">Identifying the number area</h3>
+
+<p>To identify the number area, the most direct way is to scan reports row by row and pick those cells with numbers, then union such cells into areas. As in the example, we can immediately know that the number area is C2:D5. But for complex reports, there might be other numbers scattered around, making it difficult to identify the real concerned number area.</p>
+
+<p>Another way is to utilize the information provided by summary formulas. People write aggregation formulas in reports such as SUM or AVERAGE to summarize real numbers of concern, and we can use such information to locate the number area. In the example cross-tabulation report, in column E, we saw four SUM formulas that reference C2:D2, C3:D3, C4:D4, and C5:D5, which union into C2:D5 helping us to identify the number area. In row 6, we saw two AVERAGE formulas that reference C2:C5 and D2:D5, which combine into C2:D5, which allows us to identify the number area again.</p>
+
+<h3 id="identifying-the-label-area">Identifying the label area</h3>
+
+<p>After we get the number area, just scan column by column from the left border of the number area until there is no column or empty column to find the side labels; scan row by row from the top border of the number area until no row or empty row to find the top labels.</p>
+
+<h3 id="dealing-with-multi-level-labels">Dealing with multi-level labels</h3>
+
+<p>The side labels and/or top labels might be in multiple levels. They each naturally form a group tree from higher level to lower level. Each level is a field for the resolved tabular-style data model. E.g., the side labels in the example form a group tree like the following:</p>
+
+<p><img src="/images/2024-02/01-label-to-tree1.png" alt="labels to multi-level tree"></p>
+
+<p>And top labels (with only one level in the example) form a group tree like the following:</p>
+
+<p><img src="/images/2024-02/01-label-to-tree2.png" alt="labels to single-level tree"></p>
+
+<p>Then we combine and expand two trees into one master tree and append the corresponding number to the path of each side labels plus top labels combinations, as shown below:</p>
+
+<p><img src="/images/2024-02/01-tree-combined.png" alt="a combined tree"></p>
+
+<p>Note that each level of the trees is associated with a field in the resolved tabular-style data model. Now, we simply traverse the tree from root to leaf and fill in the value in each associated field:</p>
+
+<p><img src="/images/2024-02/01-converted-tabular.png" alt="the converted tabular table"></p>
+
+<p>At this point, we&#39;ve converted a cross-tabulation into a raw, structured tabular format. </p>
+
+<p>I&#39;m excited to share this article as I&#39;ve been exploring various data analysis techniques for ottava.io. We&#39;ve recently implemented this unpivoting technique that I believe could be helpful for other developers, too. </p>
+
+<p>By incorporating this method into our platform, Ottava aims to simplify data analysis and manipulation, eliminating the need for manual data preparation or reliance on advanced tools like Power Query or Python Pandas. Our goal is to streamline the process and empower users to delve deeper into their data to uncover valuable insights. Your feedback and input on this approach are most welcome.</p>
+
+<!-- [![](/images/components/signup-banner-free.png)](https://ottava.io/signup) -->
+</div>
+    <div class="bottom">
+    </div>
+    <h5 class="author" style="user-select: text;">
+      
+        <!-- <img src="/images/author/henri.jpg" style="user-select: text;"> -->
+        <img src="/images/author/henri.jpg">
+      
+      <div class="text-container" style="user-select: text;">
+        <a href="" class="name" style="user-select: text;">Henri Chen</a>
+        
+          <div class="desc" style="user-select: text;">Founder, Ottava.</div>
+        
+      </div>
+    </h5>
+    <span class="clearfix"></span>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+  </article>
+</div>
+
+      </div>
+
+    </div>
+    <footer class="footer-wrap navbar navbar-default">
+      <div id="footer">
+        <div id="footer-wrapper">
+    <div id="footer">
+		<div id="footer-upper">
+            <h4 class="ottava-logo">
+                <a id="home" href="https://ottava.io/">
+                    OTTAVA
+                </a>
+            </h1>
+            <div class="footer-items">
+                <a class="footer-item" href="https://ottava.io/">Home</a>
+                <a class="footer-item" href="/">Blog</a>
+                <a class="footer-item" href="https://ottava.io/about">About</a>
+                <a class="footer-item" href="mailto:feedback@ottava.io">Contact Us</a>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div id="footer-lower" class="tw-flex tw-justify-between tw-gap-6">
+            <div class="tw-flex tw-gap-4">
+                <a class="tw-inline-block tw-w-5 tw-h-5" href="https://twitter.com/Ottava_io"><img src="/img/twitter.svg" /></a>
+                <a class="tw-inline-block tw-w-5 tw-h-5" href="https://www.facebook.com/profile.php?id=61554246981174"><img src="/img/facebook.svg" /></a>
+                <a class="tw-inline-block tw-w-5 tw-h-5" href="https://www.instagram.com/ottava.io/"><img src="/img/instagram.svg" /></a>
+                <a class="tw-inline-block tw-w-5 tw-h-5" href="https://www.youtube.com/@Ottava_io"><img src="/img/youtube.svg" /></a>
+            </div>
+            <div id="footer-lower-right">
+                <div>
+                    <div id="copyright">
+                        <span>&copy;</span>
+                        <span> Potix Corporation. All rights reserved.</span>
+                    </div>
+                </div>
+                <div class="divider-r"></div>
+                <div class="terms-policy">
+                    <a href="https://ottava.io/terms">Terms</a>
+                    <a href="https://ottava.io/privacy">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+      </div>
+    </footer>
+    
+    <script src="https://blog.ottava.io/js/jquery-1.10.2.min.js"></script>
+    <script src="https://blog.ottava.io/js/jquery.sticky.js"></script>
+    <script src="https://blog.ottava.io/js/main.js"></script>
+  </body>
+
+</html>

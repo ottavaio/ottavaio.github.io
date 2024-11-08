@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<channel>
+		<title>Ottava Blog</title>
+		<description>The latest updates, tricks, and tips on data management, business intelligence, and data visualization, from Ottava.</description>		
+		<link>https://blog.ottava.io</link>
+		<atom:link href="https://blog.ottava.iofeed.xml" rel="self" type="application/rss+xml" />
+		
+			<item>
+				<title>Data Diversity: Choosing the Right Approach for Meaningful Insights</title>
+				
+					<dc:creator>Susan Yang</dc:creator>
+				        
+				<description>Navigating the diversity of data types to unlocking meaningful insights.</description>
+				<pubDate>Thu, 02 May 2024 00:00:00 +0000</pubDate>
+				<link>https://blog.ottava.io/p/data-diversity.html</link>
+				<guid isPermaLink="true">https://blog.ottava.io/p/data-diversity.html</guid>
+			</item>
+		
+			<item>
+				<title>Insightful Imagery: The Transformative Trends in Data Visualization</title>
+				
+					<dc:creator>Susan Yang</dc:creator>
+				        
+				<description>Embrace trends and leverage tools responsibly to ensure sustainable growth and success.</description>
+				<pubDate>Wed, 24 Apr 2024 00:00:00 +0000</pubDate>
+				<link>https://blog.ottava.io/p/data-visualization-trends.html</link>
+				<guid isPermaLink="true">https://blog.ottava.io/p/data-visualization-trends.html</guid>
+			</item>
+		
+			<item>
+				<title>A Comprehensive Guide to Multi-Dimensional Tables</title>
+				
+					<dc:creator>Samantha K</dc:creator>
+				        
+				<description>Multi-dimensional tables organize data across variables, facilitating analysis of relationships; Explore tools that simplify visualization for actionable insights.</description>
+				<pubDate>Wed, 17 Apr 2024 00:00:00 +0000</pubDate>
+				<link>https://blog.ottava.io/p/multi-dimensional-table.html</link>
+				<guid isPermaLink="true">https://blog.ottava.io/p/multi-dimensional-table.html</guid>
+			</item>
+		
+			<item>
+				<title>Common Issues and Pitfalls of Data Analysis: Navigating Challenges</title>
+				
+					<dc:creator>Susan Yang</dc:creator>
+				        
+				<description>Challenges in data analysis include unstructured data, quality issues, confirmation bias, and mistaking correlation for causation, stressing objectivity and critical thinking.</description>
+				<pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
+				<link>https://blog.ottava.io/p/navigating-challenges.html</link>
+				<guid isPermaLink="true">https://blog.ottava.io/p/navigating-challenges.html</guid>
+			</item>
+		
+			<item>
+				<title>Visualizing Multi-Dimensional Data in Action: Vehicle Ownership</title>
+				
+					<dc:creator>Jean Yen</dc:creator>
+				        
+				<description>Explore vehicle ownership trends with Ottava&apos;s intuitive charts, revealing insights into American families&apos; vehicle ownership habits.</description>
+				<pubDate>Mon, 08 Apr 2024 00:00:00 +0000</pubDate>
+				<link>https://blog.ottava.io/p/vehicle-ownership.html</link>
+				<guid isPermaLink="true">https://blog.ottava.io/p/vehicle-ownership.html</guid>
+			</item>
+		
+			<item>
+				<title>Unlocking Success: Industry-Tailored Data Analysis</title>
+				
+					<dc:creator>Susan Yang</dc:creator>
+				        
+				<description>Explore tailoring data insights for different sectors like finance, healthcare, and marketing, crucial for strategic planning and decision-making in each industry.</description>
+				<pubDate>Tue, 02 Apr 2024 00:00:00 +0000</pubDate>
+				<link>https://blog.ottava.io/p/industry-specific-analysis-tailoring-isights.html</link>
+				<guid isPermaLink="true">https://blog.ottava.io/p/industry-specific-analysis-tailoring-isights.html</guid>
+			</item>
+		
+			<item>
+				<title>A Comprehensive Guide to Visualization Tools, Examples, and Interactive Insights</title>
+				
+					<dc:creator>Samantha K</dc:creator>
+				        
+				<description>Explore a comprehensive guide on visualization tools and interactive insights. Dive into the world of data visualization for a deeper understanding and effective communication of information.</description>
+				<pubDate>Wed, 27 Mar 2024 00:00:00 +0000</pubDate>
+				<link>https://blog.ottava.io/p/data-visualization-guide.html</link>
+				<guid isPermaLink="true">https://blog.ottava.io/p/data-visualization-guide.html</guid>
+			</item>
+		
+			<item>
+				<title>Maximizing Insights: The Advantages of Building Interactivity into Data Visualizations</title>
+				
+					<dc:creator>Susan Yang</dc:creator>
+				        
+				<description>Unlocking data&apos;s potential, this article demonstrates how interactive visualizations empower users to extract insights efficiently, transforming exploration and understanding.</description>
+				<pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate>
+				<link>https://blog.ottava.io/p/interactive-and-exploration-visualization.html</link>
+				<guid isPermaLink="true">https://blog.ottava.io/p/interactive-and-exploration-visualization.html</guid>
+			</item>
+		
+			<item>
+				<title>Mastering Data Visualization - Choosing the Right Graphs for Impactful Insights</title>
+				
+					<dc:creator>Susan Yang</dc:creator>
+				        
+				<description>Dive into effective data visualization techniques with precise examples, guiding optimal chart selection for impactful storytelling and insightful analysis.</description>
+				<pubDate>Wed, 13 Mar 2024 00:00:00 +0000</pubDate>
+				<link>https://blog.ottava.io/p/data-visualization-examples.html</link>
+				<guid isPermaLink="true">https://blog.ottava.io/p/data-visualization-examples.html</guid>
+			</item>
+		
+			<item>
+				<title>Harness Smart Copy/Paste Across All Your Spreadsheets into Ottava</title>
+				
+					<dc:creator>Wenning Hsu</dc:creator>
+				        
+				<description>Experience the advantages of reconstructing your multi-dimensional data into Ottava Pivot Grid with the latest smart copy/paste feature.</description>
+				<pubDate>Tue, 12 Mar 2024 00:00:00 +0000</pubDate>
+				<link>https://blog.ottava.io/p/copy-paste.html</link>
+				<guid isPermaLink="true">https://blog.ottava.io/p/copy-paste.html</guid>
+			</item>
+		
+	</channel>
+</rss>

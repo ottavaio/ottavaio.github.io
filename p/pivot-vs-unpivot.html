@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LZ8TEVCDEC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-LZ8TEVCDEC');
+    </script>
+
+    <!-- meta tag for social website: facebook -->
+    <meta property="og:title" content="Unlocking Data Dynamics: Understanding the Power of Pivoting and Un-pivoting">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://blog.ottava.io/p/pivot-vs-unpivot.html">
+    <meta property="og:image" content="https://blog.ottava.io2024-01/02-pivot-vs-unpivot-cover.png">
+    <meta property="og:description" content="">
+    <meta property="og:site_name" content="Ottava Blog">
+    <meta property="og:locale" content="en_us">
+
+    <meta name="keywords" content="Ottava, data analytics, Ottava blog, no code app, data management, spreadsheets, business intelligence, data visualization, tips & tricks, excel alternatives">
+
+    
+      <meta property="article:modified_time" content="2024-01-02T00:00:00+00:00">
+      <meta property="article:published_time" content="2024-01-02T00:00:00+00:00">
+      <meta property="article:author" content="https://www.facebook.com/">
+      
+        <meta property="og:see_also" content="https://blog.ottava.io/p/data-diversity.html">
+      
+        <meta property="og:see_also" content="https://blog.ottava.io/p/data-visualization-trends.html">
+      
+        <meta property="og:see_also" content="https://blog.ottava.io/p/multi-dimensional-table.html">
+      
+    
+
+    
+      
+      <meta property="article:section" content="data-management">
+      
+    
+
+    
+      
+      <meta property="article:tag" content="data-analysis-techniques">
+      
+      <meta property="article:tag" content="Pivot-and-unpivot">
+      
+      <meta property="article:tag" content="pivot">
+      
+      <meta property="article:tag" content="unpivot">
+      
+      <meta property="article:tag" content="data-transformation-methods">
+      
+      <meta property="article:tag" content="structured-data-manipulation">
+      
+      <meta property="article:tag" content="Excel-pivot-unpivot">
+      
+      <meta property="article:tag" content="database-data-restructuring">
+      
+      <meta property="article:tag" content="SQL-pivot-unpivot">
+      
+      <meta property="article:tag" content="data-organization-strategies">
+      
+      <meta property="article:tag" content="spreadsheet-data-analysis">
+      
+      <meta property="article:tag" content="unpivoting-explained">
+      
+      <meta property="article:tag" content="pivot-tables-data-analysis">
+      
+      <meta property="article:tag" content="reshaping-data-sets">
+      
+      <meta property="article:tag" content="tidy-data-concepts">
+      
+      <meta property="article:tag" content="efficient-data-restructuring">
+      
+      <meta property="article:tag" content="pivot-unpivot-examples">
+      
+      <meta property="article:tag" content="data-normalization-techniques">
+      
+      <meta property="article:tag" content="reshaping-data-insights">
+      
+      <meta property="article:tag" content="pivot-and-unpivot-best-practices">
+      
+      <meta property="article:tag" content="transforming-raw-data">
+      
+      <meta property="article:tag" content="long-format-wide-format-data">
+      
+      <meta property="article:tag" content="data-restructuring-benefits">
+      
+      <meta property="article:tag" content="analyzing-messy-data">
+      
+      <meta property="article:tag" content="data-cleaning-preparation">
+      
+      <meta property="article:tag" content="visualizing-pivoted-data">
+      
+      <meta property="article:tag" content="unpivoting-for-better-analytics">
+      
+    
+
+    <!-- meta tag for social website: twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Unlocking Data Dynamics: Understanding the Power of Pivoting and Un-pivoting">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="https://blog.ottava.io2024-01/02-pivot-vs-unpivot-cover.png">
+    <meta name="twitter:url" content="https://blog.ottava.io/p/pivot-vs-unpivot.html">
+
+    <meta name="description" content="">
+
+    <!-- meta tag for social website: search engine -->
+    
+
+    <link rel="canonical" href="https://blog.ottava.io/p/pivot-vs-unpivot.html">
+
+    
+      <link rel="next" href="https://blog.ottava.io/p/mastering-data-analysis.html" title="Mastering Data Analysis: A Comprehensive Guide to Pivot Tables and Unpivoting in Excel">
+    
+
+    
+      <link rel="prev" href="https://blog.ottava.io/p/why-ottava.html" title="Why Ottava?">
+    
+
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Unlocking Data Dynamics: Understanding the Power of Pivoting and Un-pivoting</title>
+
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta charset="utf-8" />
+
+    <link rel="canonical" href="https://blog.ottava.io/p/pivot-vs-unpivot.html">
+    <link rel="alternate" type="application/rss+xml" title="Ottava Blog" href="https://blog.ottava.io/feed.xml" />
+
+    <link rel="shortcut icon" type="image/png" href="https://blog.ottava.io/img/fav.png?v1"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Rubik:wght@500&display=swap" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" type="text/css" href="https://blog.ottava.io/css/inter/interfonts.min.css" /> -->
+	  <!-- <link rel="stylesheet" type="text/css" href="https://blog.ottava.io/css/ottavafonts.min.css" /> -->
+	  <link rel="stylesheet" type="text/css" href="https://blog.ottava.io/css/font-awesome/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://blog.ottava.io/css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://blog.ottava.io/css/blog.min.css?1731037371351092306" />
+    <link rel="stylesheet" type="text/css" href="https://blog.ottava.io/css/main.css?1731037371351092306" />
+  </head>
+
+  <body data-init="blog" style="overscroll-behavior: none;">
+    <div id="wrap">
+      <header id="header-wrapper" role="banner" 
+        class="header-wrap navbar navbar-default navbar-fixed-top">
+        <div id="header">
+          <div id="ottava-logo" class="navbar-header">
+  <button id="menu-toggle" class="navbar-toggle x24 cmn-toggle-switch htx" type="button">
+    <span>toggle menu</span>
+  </button>
+  <div class="tw-flex tw-gap-2 tw-items-center tw-mr-8">
+    <h1 class="ottava-logo">
+      <a id="home" href="https://ottava.io/">
+        OTTAVA
+      </a>
+    </h1>
+    <span class="tw-text-xs tw-h-4.5 tw-leading-4.5 tw-px-2 tw-text-blue-500 tw-bg-blue-50 tw-rounded tw-font-semibold">Beta</span>
+  </div>
+</div>
+<nav class="navbar-collapse bs-navbar-collapse collapse" role="navigation">
+  <ul id="header-icons" class="nav navbar-nav">
+    <li class="item"><a href="/">Blog</a></li>
+    <!-- <div class="spacer"></div>
+    <li class="item button button-link"><a href="https://ottava.io/login">Log in</a></li>
+    <div style="height: 0px; width: 16px;"></div>
+    <li class="item button"><a href="https://ottava.io/singup">Sign up for Free</a></li> -->
+  </ul>
+</nav>
+
+        </div>
+        <div id="side-menu-toggle-wrap">
+          <div id="side-menu-toggle"></div>  
+        </div>
+        <div id="side-menu">
+          <a class="" href="/">ALL</a>
+          
+             
+             
+             
+            <a class="" 
+              href="/category/stories">STORIES</a>
+          
+             
+             
+             
+            <a class="active" 
+              href="/category/data-management">DATA MANAGEMENT</a>
+          
+             
+             
+             
+            <a class="" 
+              href="/category/pivot-table">PIVOT TABLE</a>
+          
+             
+             
+             
+            <a class="" 
+              href="/category/product">PRODUCT</a>
+          
+             
+             
+             
+            <a class="" 
+              href="/category/data-analysis">DATA ANALYSIS</a>
+          
+             
+             
+             
+            <a class="" 
+              href="/category/data-visualization">DATA VISUALIZATION</a>
+          
+             
+             
+             
+            <a class="" 
+              href="/category/feature">FEATURE</a>
+          
+        </div>
+      </header>
+
+      <div id="body" class="post-container">
+        <div id="post">
+  <article>
+    <div class="share-container">
+      <div class="share">
+        <div class="share-title" style="user-select: text;">share</div>
+        
+        <a href="http://twitter.com/share?text=Unlocking Data Dynamics: Understanding the Power of Pivoting and Un-pivoting&url=https://blog.ottava.io/p/pivot-vs-unpivot.html&via=ottavaio" class="twitter" target="_blank"></a>
+        <a href="http://www.facebook.com/sharer.php?u=https://blog.ottava.io/p/pivot-vs-unpivot.html" class="fb" target="_blank"></a>
+        <a href="http://www.linkedin.com/shareArticle?mini=true&url=https://blog.ottava.io/p/pivot-vs-unpivot.html&title=Unlocking Data Dynamics: Understanding the Power of Pivoting and Un-pivoting&summary=&source=" target="_blank" class="in"></a>
+      </div>
+    </div>
+    <h5 class="post-meta tw-text-center">
+      <span class="post-category"><a href="/category/data-management">data management</a> | Jan 2, 2024</span>
+    </h5>
+    <h1 class="title tw-text-center">Unlocking Data Dynamics: Understanding the Power of Pivoting and Un-pivoting</h1>
+    <span class="clearfix"></span>
+    <div class="markdown"><p><img src="/images/2024-01/02-pivot-vs-unpivot-cover.png" alt=""></p>
+
+<p>In the realm of data manipulation and analysis, the terms &quot;pivoting&quot; and &quot;un-pivoting&quot; play crucial roles in transforming raw data into meaningful insights. </p>
+
+<p>These operations are fundamental to reshaping datasets for better visualization, analysis, and interpretation. In this blog post, let&#39;s kick back, sip some coffee, and demystify these concepts that make your data dance to the right tunes.</p>
+
+<p class="tl-dr">
+<b>TL;DR</b>: Pivoting transforms data for better analysis and visualization, aggregating values and improving readability. Un-pivoting retrieves detailed information from aggregated datasets, aiding in normalization and providing granularity. Ottava lets users unlock the full potential of their data for meaningful insights by working directly with pivoted data from the data entry step.
+</p>
+
+<h1 id="pivoting-data-and-why-does-it-matter">Pivoting Data and Why Does It Matter?</h1>
+
+<p><img src="/images/2024-01/02-pivot.png" alt=""></p>
+
+<p>Pivoting a column means aggregating identical values in that column, resulting in a new table orientation. The initial step involves sorting the table in ascending order based on the values present in the first column.</p>
+
+<p>This transformative process revolves around the art of rotating or transposing data, seamlessly converting rows into columns and vice versa. The beauty of pivoting lies in its ability to bring order to the chaos of scattered information.</p>
+
+<p>Picture a scenario where dates are laid out in rows, and sales figures are scattered across columns in a dataset. Pivoting enables you to elegantly rearrange the data landscape. With a simple pivot, dates effortlessly transform into columns, aligning perfectly with their corresponding sales figures.</p>
+
+<p>Within the domain of data analysis, leveraging pivoted data empowers you to effortlessly employ aggregation and filtering techniques. Embracing the prowess of Pivot not only optimizes your data for analysis but also clears the path for a more streamlined and user-friendly data entry process.</p>
+
+<h2 id="key-characteristics-of-pivoting">Key Characteristics of Pivoting:</h2>
+
+<ol>
+<li><strong>Aggregate Values:</strong> Pivoting is often used to aggregate or summarize data. By grouping and restructuring information, it becomes simpler to perform calculations or generate summary statistics.</li>
+<li><strong>Improved Readability:</strong> Pivoting can enhance the readability of data, especially when dealing with time series or categorical information. This makes it easier for analysts and decision-makers to identify trends or patterns.</li>
+<li><strong>Charting and Visualization:</strong> Many data visualization tools prefer data in a pivoted format. Pivoted data is often more compatible with charting libraries and makes it straightforward to create visual representations of trends and comparisons.</li>
+</ol>
+
+<h1 id="un-pivoting-data-and-what-does-it-even-mean">Un-Pivoting Data and What Does It Even Mean?</h1>
+
+<p><img src="/images/2024-01/02-unpivot.png" alt=""></p>
+
+<p>You’ve heard of pivoting data, but have you ever heard of un-pivoting before?</p>
+
+<p>In the realm of data manipulation, pivoting restructures data to enhance analysis, but its counterpart, un-pivoting, performs the inverse function. Un-pivoting (sometimes called <em>flattening the data</em>) takes data from a summarized or aggregated state back to its original, more detailed form. This reversal is particularly valuable when dealing with pre-aggregated data designed for reporting purposes.</p>
+
+<p>The significance of un-pivoting becomes apparent when considering the diverse angles from which data analysis can be approached. While pivoted data provides a convenient view for specific analyses, the un-pivoted form is essential for exploring data from various perspectives. Despite its importance, working with un-pivoted data can be a messy and intricate process.</p>
+
+<p>To illustrate, creating charts or reports often necessitates the use of un-pivoted data. This step is crucial for delving into the nuances of information, revealing patterns, and facilitating a comprehensive understanding of the dataset. In essence, while pivoting optimizes data for specific analyses, un-pivoting is the key to unlocking the full analytical potential, offering a more granular and nuanced view of the underlying information.</p>
+
+<h2 id="key-characteristics-of-un-pivoting">Key Characteristics of Un-pivoting:</h2>
+
+<ol>
+<li><strong>Detail Retrieval:</strong> Un-pivoting allows users to retrieve detailed information from aggregated datasets. For instance, if sales data is pivoted by product categories, un-pivoting can bring back the individual transactions associated with each category.</li>
+<li><strong>Database Normalization:</strong> Un-pivoting is an essential step in the normalization of databases. By breaking down aggregated data into its atomic components, databases can be structured more efficiently.</li>
+<li><strong>Flexible Analysis:</strong> Unpivoted data provides a level of granularity that is crucial for certain types of analysis. Users can explore individual data points and relationships that might be lost in a pivoted summary.</li>
+</ol>
+
+<h1 id="why-ottava-chose-to-work-with-pivoted-data">Why Ottava Chose to Work with Pivoted Data</h1>
+
+<p>By this time, we hope you already spent some time working with Ottava and realized what we’ve done with the data entry method.</p>
+
+<p>Ottava&#39;s unique feature allows users to input raw data directly in a pivoted format (multi-dimensional tables) rather than the conventional tabular data. This choice is driven by our understanding of the benefits and efficiency that such an approach brings to data management. The key reason Ottava enables users to work with pivoted data directly is to mitigate data entry errors that can arise from manual input.</p>
+
+<p>Moreover, Ottava seamlessly executes the un-pivoting command in the background, a crucial step often required before diving into data analysis. By automating this process, Ottava spares users the complexities of un-pivoting data, allowing them to focus on working directly with the pivoted data and the charts we&#39;ve meticulously crafted.</p>
+
+<p>The already pivoted data in Ottava opens up a world of possibilities, presenting users with a curated collection of ready-to-use charts and visualizations tailored to this format. This not only simplifies the creation of dashboards and reports but also ensures that users can effortlessly transform their data into impactful visual representations. This aligns perfectly with Ottava&#39;s commitment to delivering a user-friendly experience, reducing human errors, and unlocking the full potential of data by transforming raw information into actionable insights.</p>
+
+<!-- [![](/images/components/signup-banner-free.png)](https://ottava.io/signup) -->
+</div>
+    <div class="bottom">
+    </div>
+    <h5 class="author" style="user-select: text;">
+      
+        <!-- <img src="/images/author/vicky.png" style="user-select: text;"> -->
+        <img src="/images/author/vicky.png">
+      
+      <div class="text-container" style="user-select: text;">
+        <a href="https://medium.com/@itsvicky" class="name" style="user-select: text;">Vicky Pham</a>
+        
+          <div class="desc" style="user-select: text;">Marketer by day, Bibliophile by night.</div>
+        
+      </div>
+    </h5>
+    <span class="clearfix"></span>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+  </article>
+</div>
+
+      </div>
+
+    </div>
+    <footer class="footer-wrap navbar navbar-default">
+      <div id="footer">
+        <div id="footer-wrapper">
+    <div id="footer">
+		<div id="footer-upper">
+            <h4 class="ottava-logo">
+                <a id="home" href="https://ottava.io/">
+                    OTTAVA
+                </a>
+            </h1>
+            <div class="footer-items">
+                <a class="footer-item" href="https://ottava.io/">Home</a>
+                <a class="footer-item" href="/">Blog</a>
+                <a class="footer-item" href="https://ottava.io/about">About</a>
+                <a class="footer-item" href="mailto:feedback@ottava.io">Contact Us</a>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div id="footer-lower" class="tw-flex tw-justify-between tw-gap-6">
+            <div class="tw-flex tw-gap-4">
+                <a class="tw-inline-block tw-w-5 tw-h-5" href="https://twitter.com/Ottava_io"><img src="/img/twitter.svg" /></a>
+                <a class="tw-inline-block tw-w-5 tw-h-5" href="https://www.facebook.com/profile.php?id=61554246981174"><img src="/img/facebook.svg" /></a>
+                <a class="tw-inline-block tw-w-5 tw-h-5" href="https://www.instagram.com/ottava.io/"><img src="/img/instagram.svg" /></a>
+                <a class="tw-inline-block tw-w-5 tw-h-5" href="https://www.youtube.com/@Ottava_io"><img src="/img/youtube.svg" /></a>
+            </div>
+            <div id="footer-lower-right">
+                <div>
+                    <div id="copyright">
+                        <span>&copy;</span>
+                        <span> Potix Corporation. All rights reserved.</span>
+                    </div>
+                </div>
+                <div class="divider-r"></div>
+                <div class="terms-policy">
+                    <a href="https://ottava.io/terms">Terms</a>
+                    <a href="https://ottava.io/privacy">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+      </div>
+    </footer>
+    
+    <script src="https://blog.ottava.io/js/jquery-1.10.2.min.js"></script>
+    <script src="https://blog.ottava.io/js/jquery.sticky.js"></script>
+    <script src="https://blog.ottava.io/js/main.js"></script>
+  </body>
+
+</html>

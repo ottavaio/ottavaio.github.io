@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LZ8TEVCDEC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-LZ8TEVCDEC');
+    </script>
+
+    <!-- meta tag for social website: facebook -->
+    <meta property="og:title" content="Pivot Challenge: Can you analyze this aggregated data?">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://blog.ottava.io/p/pivot-challenge.html">
+    <meta property="og:image" content="https://blog.ottava.io2024-01/17-pivot-challenge-cover.png">
+    <meta property="og:description" content="">
+    <meta property="og:site_name" content="Ottava Blog">
+    <meta property="og:locale" content="en_us">
+
+    <meta name="keywords" content="Ottava, data analytics, Ottava blog, no code app, data management, spreadsheets, business intelligence, data visualization, tips & tricks, excel alternatives">
+
+    
+      <meta property="article:modified_time" content="2024-01-17T00:00:00+00:00">
+      <meta property="article:published_time" content="2024-01-17T00:00:00+00:00">
+      <meta property="article:author" content="https://www.facebook.com/">
+      
+        <meta property="og:see_also" content="https://blog.ottava.io/p/data-diversity.html">
+      
+        <meta property="og:see_also" content="https://blog.ottava.io/p/data-visualization-trends.html">
+      
+        <meta property="og:see_also" content="https://blog.ottava.io/p/multi-dimensional-table.html">
+      
+    
+
+    
+      
+      <meta property="article:section" content="stories">
+      
+    
+
+    
+      
+      <meta property="article:tag" content="pivot">
+      
+      <meta property="article:tag" content="pivot table">
+      
+      <meta property="article:tag" content="excel pivot table">
+      
+      <meta property="article:tag" content="pivot table in Excel">
+      
+      <meta property="article:tag" content="unpivot">
+      
+      <meta property="article:tag" content="data analysis">
+      
+      <meta property="article:tag" content="pivot charts">
+      
+    
+
+    <!-- meta tag for social website: twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Pivot Challenge: Can you analyze this aggregated data?">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="https://blog.ottava.io2024-01/17-pivot-challenge-cover.png">
+    <meta name="twitter:url" content="https://blog.ottava.io/p/pivot-challenge.html">
+
+    <meta name="description" content="">
+
+    <!-- meta tag for social website: search engine -->
+    
+
+    <link rel="canonical" href="https://blog.ottava.io/p/pivot-challenge.html">
+
+    
+      <link rel="next" href="https://blog.ottava.io/p/pivot-explained.html" title="Pivot Table Explained">
+    
+
+    
+      <link rel="prev" href="https://blog.ottava.io/p/mastering-data-analysis.html" title="Mastering Data Analysis: A Comprehensive Guide to Pivot Tables and Unpivoting in Excel">
+    
+
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Pivot Challenge: Can you analyze this aggregated data?</title>
+
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta charset="utf-8" />
+
+    <link rel="canonical" href="https://blog.ottava.io/p/pivot-challenge.html">
+    <link rel="alternate" type="application/rss+xml" title="Ottava Blog" href="https://blog.ottava.io/feed.xml" />
+
+    <link rel="shortcut icon" type="image/png" href="https://blog.ottava.io/img/fav.png?v1"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Rubik:wght@500&display=swap" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" type="text/css" href="https://blog.ottava.io/css/inter/interfonts.min.css" /> -->
+	  <!-- <link rel="stylesheet" type="text/css" href="https://blog.ottava.io/css/ottavafonts.min.css" /> -->
+	  <link rel="stylesheet" type="text/css" href="https://blog.ottava.io/css/font-awesome/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://blog.ottava.io/css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://blog.ottava.io/css/blog.min.css?1731037371351092306" />
+    <link rel="stylesheet" type="text/css" href="https://blog.ottava.io/css/main.css?1731037371351092306" />
+  </head>
+
+  <body data-init="blog" style="overscroll-behavior: none;">
+    <div id="wrap">
+      <header id="header-wrapper" role="banner" 
+        class="header-wrap navbar navbar-default navbar-fixed-top">
+        <div id="header">
+          <div id="ottava-logo" class="navbar-header">
+  <button id="menu-toggle" class="navbar-toggle x24 cmn-toggle-switch htx" type="button">
+    <span>toggle menu</span>
+  </button>
+  <div class="tw-flex tw-gap-2 tw-items-center tw-mr-8">
+    <h1 class="ottava-logo">
+      <a id="home" href="https://ottava.io/">
+        OTTAVA
+      </a>
+    </h1>
+    <span class="tw-text-xs tw-h-4.5 tw-leading-4.5 tw-px-2 tw-text-blue-500 tw-bg-blue-50 tw-rounded tw-font-semibold">Beta</span>
+  </div>
+</div>
+<nav class="navbar-collapse bs-navbar-collapse collapse" role="navigation">
+  <ul id="header-icons" class="nav navbar-nav">
+    <li class="item"><a href="/">Blog</a></li>
+    <!-- <div class="spacer"></div>
+    <li class="item button button-link"><a href="https://ottava.io/login">Log in</a></li>
+    <div style="height: 0px; width: 16px;"></div>
+    <li class="item button"><a href="https://ottava.io/singup">Sign up for Free</a></li> -->
+  </ul>
+</nav>
+
+        </div>
+        <div id="side-menu-toggle-wrap">
+          <div id="side-menu-toggle"></div>  
+        </div>
+        <div id="side-menu">
+          <a class="" href="/">ALL</a>
+          
+             
+             
+             
+            <a class="active" 
+              href="/category/stories">STORIES</a>
+          
+             
+             
+             
+            <a class="" 
+              href="/category/data-management">DATA MANAGEMENT</a>
+          
+             
+             
+             
+            <a class="" 
+              href="/category/pivot-table">PIVOT TABLE</a>
+          
+             
+             
+             
+            <a class="" 
+              href="/category/product">PRODUCT</a>
+          
+             
+             
+             
+            <a class="" 
+              href="/category/data-analysis">DATA ANALYSIS</a>
+          
+             
+             
+             
+            <a class="" 
+              href="/category/data-visualization">DATA VISUALIZATION</a>
+          
+             
+             
+             
+            <a class="" 
+              href="/category/feature">FEATURE</a>
+          
+        </div>
+      </header>
+
+      <div id="body" class="post-container">
+        <div id="post">
+  <article>
+    <div class="share-container">
+      <div class="share">
+        <div class="share-title" style="user-select: text;">share</div>
+        
+        <a href="http://twitter.com/share?text=Pivot Challenge: Can you analyze this aggregated data?&url=https://blog.ottava.io/p/pivot-challenge.html&via=ottavaio" class="twitter" target="_blank"></a>
+        <a href="http://www.facebook.com/sharer.php?u=https://blog.ottava.io/p/pivot-challenge.html" class="fb" target="_blank"></a>
+        <a href="http://www.linkedin.com/shareArticle?mini=true&url=https://blog.ottava.io/p/pivot-challenge.html&title=Pivot Challenge: Can you analyze this aggregated data?&summary=&source=" target="_blank" class="in"></a>
+      </div>
+    </div>
+    <h5 class="post-meta tw-text-center">
+      <span class="post-category"><a href="/category/stories">stories</a> | Jan 17, 2024</span>
+    </h5>
+    <h1 class="title tw-text-center">Pivot Challenge: Can you analyze this aggregated data?</h1>
+    <span class="clearfix"></span>
+    <div class="markdown"><p><img src="/images/2024-01/17-pivot-challenge-cover.png" alt="pivot table"></p>
+
+<p>My mom is a teacher; one day, she showed me the class grades and asked me how she could re-arrange them to see how students were doing in each class across Q1 and Q2 and find out which students were falling behind on any specific subject.</p>
+
+<p><img src="/images/2024-01/17-report-card.png" alt="a grade book table"></p>
+
+<p>“Easy peasy.&quot; I was more than confident. Pivot tables and pivot charts are for slice and dice; I immediately thought about using them. I am not an expert, but I&#39;ve used Excel pivot table at work a few times. I opened up my laptop and input the grade data, starting to insert a pivot chart. </p>
+
+<p>“Hum,” I immediately ran into a warning message saying that data has to be in labeled columns.</p>
+
+<p>I updated the table so that the columns are labeled.</p>
+
+<p><img src="/images/2024-01/17-report-card2.png" alt="an Excel pivot table"></p>
+
+<p>After the change, I was able to select a range and insert a pivot chart, except for the very top quarter row. Nevermind. 
+The resulting chart looks like this:</p>
+
+<p><img src="/images/2024-01/17-excel.png" alt="an Excel pivot table"></p>
+
+<p>Almost there. But it’s not grouping students in the correct classes: Peter should be in Class A and Cindy should be in Class B.</p>
+
+<p>I switched the rows and columns and tweaked them here and there. I could not get a helpful chart comparing the two classes. Also, I could not include Q1 and Q2 in the charts at all. </p>
+
+<blockquote>
+<p><em>I stumbled upon several forums and finally concluded that this grade book is not something I can slice and dice with pivot table in Excel directly. I will first have to convert it into tabular data before I can pivot it.</em></p>
+</blockquote>
+
+<p>Tabular data, what exactly is it? </p>
+
+<p><img src="/images/2024-01/17-tabular-vs-pivoted.png" alt="comparing tabular and pivoted data"></p>
+
+<p>Tabular data (left) has a row header indicating the meaning of each column, followed by rows of data, either text or numbers. It is well-structured and can be easily filtered, sorted and analyzed. </p>
+
+<p>But it is different from the original grade book I have (right) – which is generally grouped; it has one or more row headers, one or more column headers, and many numbers in the main grid.</p>
+
+<p class="link-to-post">
+Read more on <a href="pivot-vs-unpivot.html">Understanding the Power of Pivoting and Un-Pivoting</a>
+</p>
+
+<p>I&#39;ve tried to use other popular spreadsheet apps like Tableau, and they all have the same requirement - you have to unpivot or shape your data in tabular format before you can even start to analyze them. In Excel, this unpivot process is normally done with advanced tools like Power Query. Unpivot can also be done using Python or other advanced platforms.</p>
+
+<blockquote>
+<p><em>How inconvenient! Wouldn&#39;t it be great if we could explore the grade book directly without having to convert it back to the tabular data?</em></p>
+</blockquote>
+
+<p>That’s where the Ottava approach comes in to change the game.</p>
+
+<p><strong>Ottava is designed to work with pivoted or aggregated data directly, such as this grade book, sales reports, or an annual budget. Simply input the pivoted/aggregated data as it is, and it will intelligently suggest appropriate pivot charts for you to pick from.</strong></p>
+
+<p>This brings two advantages: first, obviously, skipping the unpivot, or pivoted-to-tabular transformation, saves time and makes the process of analyzing pivoted data easier.</p>
+
+<p>Secondly, the pivoted table preserves more high-level information.
+If you take a look at the pivoted data below:</p>
+
+<p><img src="/images/2024-01/17-report-card.png" alt=""></p>
+
+<p>You can tell the hierarchy from the table. For example, you can tell there are two classes, A and B, where John and Peter belong to Class A, and Anna and Cindy belong to Class B. Also, you can tell that there are two quarters, and in each quarter, students study three subjects. </p>
+
+<p>With this information, we can assume that the user having this table would want to compare the grades between Class A and Class B; or compare the grades across Q1 and Q2.</p>
+
+<p><img src="/images/2024-01/17-ottava.png" alt="comparing tabular and pivoted data"></p>
+
+<p>If you turn your pivoted data into tabular data, such hierarchy information is no longer there, and all fields are treated equally. A tool that analyzes this tabular data has less information to predict what the user really wants to visualize.</p>
+
+<p>Ottava’s distinctive capability of analyzing pivoted data streamlines the data analysis process, saving valuable time and providing users with a seamless experience. Most importantly, now, my mom can easily visualize and explore her grade book with Ottava all by herself!</p>
+
+<p>If this sounds like something you’ve been waiting for, give it a try and let us know what you think!</p>
+
+<!-- [![](/images/components/signup-banner-free.png)](https://ottava.io/signup) -->
+</div>
+    <div class="bottom">
+    </div>
+    <h5 class="author" style="user-select: text;">
+      
+        <!-- <img src="/images/author/jean.jpg" style="user-select: text;"> -->
+        <img src="/images/author/jean.jpg">
+      
+      <div class="text-container" style="user-select: text;">
+        <a href="" class="name" style="user-select: text;">Jean Yen</a>
+        
+          <div class="desc" style="user-select: text;">Marketing, Ottava.</div>
+        
+      </div>
+    </h5>
+    <span class="clearfix"></span>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+  </article>
+</div>
+
+      </div>
+
+    </div>
+    <footer class="footer-wrap navbar navbar-default">
+      <div id="footer">
+        <div id="footer-wrapper">
+    <div id="footer">
+		<div id="footer-upper">
+            <h4 class="ottava-logo">
+                <a id="home" href="https://ottava.io/">
+                    OTTAVA
+                </a>
+            </h1>
+            <div class="footer-items">
+                <a class="footer-item" href="https://ottava.io/">Home</a>
+                <a class="footer-item" href="/">Blog</a>
+                <a class="footer-item" href="https://ottava.io/about">About</a>
+                <a class="footer-item" href="mailto:feedback@ottava.io">Contact Us</a>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div id="footer-lower" class="tw-flex tw-justify-between tw-gap-6">
+            <div class="tw-flex tw-gap-4">
+                <a class="tw-inline-block tw-w-5 tw-h-5" href="https://twitter.com/Ottava_io"><img src="/img/twitter.svg" /></a>
+                <a class="tw-inline-block tw-w-5 tw-h-5" href="https://www.facebook.com/profile.php?id=61554246981174"><img src="/img/facebook.svg" /></a>
+                <a class="tw-inline-block tw-w-5 tw-h-5" href="https://www.instagram.com/ottava.io/"><img src="/img/instagram.svg" /></a>
+                <a class="tw-inline-block tw-w-5 tw-h-5" href="https://www.youtube.com/@Ottava_io"><img src="/img/youtube.svg" /></a>
+            </div>
+            <div id="footer-lower-right">
+                <div>
+                    <div id="copyright">
+                        <span>&copy;</span>
+                        <span> Potix Corporation. All rights reserved.</span>
+                    </div>
+                </div>
+                <div class="divider-r"></div>
+                <div class="terms-policy">
+                    <a href="https://ottava.io/terms">Terms</a>
+                    <a href="https://ottava.io/privacy">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+      </div>
+    </footer>
+    
+    <script src="https://blog.ottava.io/js/jquery-1.10.2.min.js"></script>
+    <script src="https://blog.ottava.io/js/jquery.sticky.js"></script>
+    <script src="https://blog.ottava.io/js/main.js"></script>
+  </body>
+
+</html>

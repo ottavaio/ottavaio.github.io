@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LZ8TEVCDEC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-LZ8TEVCDEC');
+    </script>
+
+    <!-- meta tag for social website: facebook -->
+    <meta property="og:title" content="Visualizing Multi-Dimensional Data in Action: Vehicle Ownership">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://blog.ottava.io/p/vehicle-ownership.html">
+    <meta property="og:image" content="https://blog.ottava.io2024-04/08-vehicle-ownership-cover.png">
+    <meta property="og:description" content="">
+    <meta property="og:site_name" content="Ottava Blog">
+    <meta property="og:locale" content="en_us">
+
+    <meta name="keywords" content="Ottava, data analytics, Ottava blog, no code app, data management, spreadsheets, business intelligence, data visualization, tips & tricks, excel alternatives">
+
+    
+      <meta property="article:modified_time" content="2024-04-08T00:00:00+00:00">
+      <meta property="article:published_time" content="2024-04-08T00:00:00+00:00">
+      <meta property="article:author" content="https://www.facebook.com/">
+      
+        <meta property="og:see_also" content="https://blog.ottava.io/p/data-diversity.html">
+      
+        <meta property="og:see_also" content="https://blog.ottava.io/p/data-visualization-trends.html">
+      
+        <meta property="og:see_also" content="https://blog.ottava.io/p/multi-dimensional-table.html">
+      
+    
+
+    
+      
+      <meta property="article:section" content="product">
+      
+    
+
+    
+      
+      <meta property="article:tag" content="US-Census-Bureau,">
+      
+      <meta property="article:tag" content="Kaggle,">
+      
+      <meta property="article:tag" content="Vehicle-ownership-trends,">
+      
+      <meta property="article:tag" content="Multi-dimensional-data-visualization,">
+      
+      <meta property="article:tag" content="Data-exploration,">
+      
+      <meta property="article:tag" content="American-families-vehicle-ownership,">
+      
+      <meta property="article:tag" content="Data-analysis-with-Ottava">
+      
+    
+
+    <!-- meta tag for social website: twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Visualizing Multi-Dimensional Data in Action: Vehicle Ownership">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="https://blog.ottava.io2024-04/08-vehicle-ownership-cover.png">
+    <meta name="twitter:url" content="https://blog.ottava.io/p/vehicle-ownership.html">
+
+    <meta name="description" content="">
+
+    <!-- meta tag for social website: search engine -->
+    
+
+    <link rel="canonical" href="https://blog.ottava.io/p/vehicle-ownership.html">
+
+    
+      <link rel="next" href="https://blog.ottava.io/p/navigating-challenges.html" title="Common Issues and Pitfalls of Data Analysis: Navigating Challenges">
+    
+
+    
+      <link rel="prev" href="https://blog.ottava.io/p/industry-specific-analysis-tailoring-isights.html" title="Unlocking Success: Industry-Tailored Data Analysis">
+    
+
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Visualizing Multi-Dimensional Data in Action: Vehicle Ownership</title>
+
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta charset="utf-8" />
+
+    <link rel="canonical" href="https://blog.ottava.io/p/vehicle-ownership.html">
+    <link rel="alternate" type="application/rss+xml" title="Ottava Blog" href="https://blog.ottava.io/feed.xml" />
+
+    <link rel="shortcut icon" type="image/png" href="https://blog.ottava.io/img/fav.png?v1"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Rubik:wght@500&display=swap" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" type="text/css" href="https://blog.ottava.io/css/inter/interfonts.min.css" /> -->
+	  <!-- <link rel="stylesheet" type="text/css" href="https://blog.ottava.io/css/ottavafonts.min.css" /> -->
+	  <link rel="stylesheet" type="text/css" href="https://blog.ottava.io/css/font-awesome/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://blog.ottava.io/css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://blog.ottava.io/css/blog.min.css?1731037371351092306" />
+    <link rel="stylesheet" type="text/css" href="https://blog.ottava.io/css/main.css?1731037371351092306" />
+  </head>
+
+  <body data-init="blog" style="overscroll-behavior: none;">
+    <div id="wrap">
+      <header id="header-wrapper" role="banner" 
+        class="header-wrap navbar navbar-default navbar-fixed-top">
+        <div id="header">
+          <div id="ottava-logo" class="navbar-header">
+  <button id="menu-toggle" class="navbar-toggle x24 cmn-toggle-switch htx" type="button">
+    <span>toggle menu</span>
+  </button>
+  <div class="tw-flex tw-gap-2 tw-items-center tw-mr-8">
+    <h1 class="ottava-logo">
+      <a id="home" href="https://ottava.io/">
+        OTTAVA
+      </a>
+    </h1>
+    <span class="tw-text-xs tw-h-4.5 tw-leading-4.5 tw-px-2 tw-text-blue-500 tw-bg-blue-50 tw-rounded tw-font-semibold">Beta</span>
+  </div>
+</div>
+<nav class="navbar-collapse bs-navbar-collapse collapse" role="navigation">
+  <ul id="header-icons" class="nav navbar-nav">
+    <li class="item"><a href="/">Blog</a></li>
+    <!-- <div class="spacer"></div>
+    <li class="item button button-link"><a href="https://ottava.io/login">Log in</a></li>
+    <div style="height: 0px; width: 16px;"></div>
+    <li class="item button"><a href="https://ottava.io/singup">Sign up for Free</a></li> -->
+  </ul>
+</nav>
+
+        </div>
+        <div id="side-menu-toggle-wrap">
+          <div id="side-menu-toggle"></div>  
+        </div>
+        <div id="side-menu">
+          <a class="" href="/">ALL</a>
+          
+             
+             
+             
+            <a class="" 
+              href="/category/stories">STORIES</a>
+          
+             
+             
+             
+            <a class="" 
+              href="/category/data-management">DATA MANAGEMENT</a>
+          
+             
+             
+             
+            <a class="" 
+              href="/category/pivot-table">PIVOT TABLE</a>
+          
+             
+             
+             
+            <a class="active" 
+              href="/category/product">PRODUCT</a>
+          
+             
+             
+             
+            <a class="" 
+              href="/category/data-analysis">DATA ANALYSIS</a>
+          
+             
+             
+             
+            <a class="" 
+              href="/category/data-visualization">DATA VISUALIZATION</a>
+          
+             
+             
+             
+            <a class="" 
+              href="/category/feature">FEATURE</a>
+          
+        </div>
+      </header>
+
+      <div id="body" class="post-container">
+        <div id="post">
+  <article>
+    <div class="share-container">
+      <div class="share">
+        <div class="share-title" style="user-select: text;">share</div>
+        
+        <a href="http://twitter.com/share?text=Visualizing Multi-Dimensional Data in Action: Vehicle Ownership&url=https://blog.ottava.io/p/vehicle-ownership.html&via=ottavaio" class="twitter" target="_blank"></a>
+        <a href="http://www.facebook.com/sharer.php?u=https://blog.ottava.io/p/vehicle-ownership.html" class="fb" target="_blank"></a>
+        <a href="http://www.linkedin.com/shareArticle?mini=true&url=https://blog.ottava.io/p/vehicle-ownership.html&title=Visualizing Multi-Dimensional Data in Action: Vehicle Ownership&summary=&source=" target="_blank" class="in"></a>
+      </div>
+    </div>
+    <h5 class="post-meta tw-text-center">
+      <span class="post-category"><a href="/category/product">product</a> | Apr 8, 2024</span>
+    </h5>
+    <h1 class="title tw-text-center">Visualizing Multi-Dimensional Data in Action: Vehicle Ownership</h1>
+    <span class="clearfix"></span>
+    <div class="markdown"><p><img src="/images/2024-04/08-vehicle-ownership-cover.png" alt="vehicle ownership analysis cover"></p>
+
+<p>Did you know that the majority of American families own two vehicles? Surprisingly, there are approximately 5 million single-living individuals who own two or more vehicles. Let&#39;s dive into these fascinating insights through our Vehicle Ownership public chart.</p>
+
+<p><img src="/images/2024-04/08-vehicle1.png" alt="vehicle ownership analysis 1"></p>
+
+<p>Exploring numerical data through charts not only offers a visually engaging experience but also taps into our innate ability to process visual information swiftly, as research has shown. Charts provide a clear context and deeper insights into the underlying data compared to traditional numerical formats.</p>
+
+<p>So, how did we create these insightful vehicle ownership charts using Ottava?</p>
+
+<p>We began with our multi-dimensional data stored in an Excel file. You can access similar data from various sources such as the <a href="https://www.census.gov/">US Census Bureau</a>, <a href="https://www.kaggle.com/">Kaggle</a>, and <a href="https://finance.yahoo.com/">Yahoo Finance</a>, among others.</p>
+
+<p>Once we had our data, we seamlessly transferred it to Ottava&#39;s pivot grid with a few simple steps:</p>
+
+<ul>
+<li>Select the desired data table in Excel using Ctrl-C.</li>
+<li>Navigate to Ottava&#39;s pivot grid and click on the dot in the upper-left corner.</li>
+<li>Paste the data using Ctrl-V.</li>
+</ul>
+
+<p class="link-to-post">
+Detailed steps on using Ottava's <a href="copy-paste.html">Smart Copy/Paste</a>
+</p>
+
+<p>Voila! Your data is now in Ottava, and the platform automatically suggests suitable charts based on the presented data in the right panel.</p>
+
+<p><img src="/images/2024-04/08-vehicle-in-ottava.png" alt="vehicle ownership in ottava"></p>
+
+<p>You don&#39;t need to perform any additional actions; Ottava streamlines the process for you.</p>
+
+<p>If you wish to focus on specific aspects of the data, Ottava offers easy filtering options. For instance, you can select and filter data for 2-person and 3-person households by using Ctrl-click directly in the pivot grid. Ottava then generates corresponding charts, excluding other options.</p>
+
+<p><img src="/images/2024-04/08-vehicle3.png" alt="vehicle ownership analysis 1"></p>
+
+<p>For further customization or exploration, add the chart to &quot;My View&quot; and tweak it to your preferences.</p>
+
+<p><img src="/images/2024-04/08-vehicle4.png" alt="vehicle ownership analysis 2"></p>
+
+<p>You can change chart types, apply filters, and rearrange fields effortlessly. Ottava&#39;s intuitive interface allows you to swap X and Y axes or modify chart types from bar charts to pie charts seamlessly.</p>
+
+<p><img src="/images/2024-04/08-vehicle5.png" alt="vehicle ownership analysis 3"></p>
+
+<p>With Ottava, data exploration becomes a breeze. Uncover intriguing insights and discover hidden trends with just a few clicks. Try Ottava today and embark on a journey of data discovery like never before!</p>
+
+<!-- [![sign up banner](/images/components/signup-banner-free.png)](https://ottava.io/signup) -->
+</div>
+    <div class="bottom">
+    </div>
+    <h5 class="author" style="user-select: text;">
+      
+        <!-- <img src="/images/author/jean.jpg" style="user-select: text;"> -->
+        <img src="/images/author/jean.jpg">
+      
+      <div class="text-container" style="user-select: text;">
+        <a href="" class="name" style="user-select: text;">Jean Yen</a>
+        
+          <div class="desc" style="user-select: text;">Marketing, Ottava.</div>
+        
+      </div>
+    </h5>
+    <span class="clearfix"></span>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+  </article>
+</div>
+
+      </div>
+
+    </div>
+    <footer class="footer-wrap navbar navbar-default">
+      <div id="footer">
+        <div id="footer-wrapper">
+    <div id="footer">
+		<div id="footer-upper">
+            <h4 class="ottava-logo">
+                <a id="home" href="https://ottava.io/">
+                    OTTAVA
+                </a>
+            </h1>
+            <div class="footer-items">
+                <a class="footer-item" href="https://ottava.io/">Home</a>
+                <a class="footer-item" href="/">Blog</a>
+                <a class="footer-item" href="https://ottava.io/about">About</a>
+                <a class="footer-item" href="mailto:feedback@ottava.io">Contact Us</a>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div id="footer-lower" class="tw-flex tw-justify-between tw-gap-6">
+            <div class="tw-flex tw-gap-4">
+                <a class="tw-inline-block tw-w-5 tw-h-5" href="https://twitter.com/Ottava_io"><img src="/img/twitter.svg" /></a>
+                <a class="tw-inline-block tw-w-5 tw-h-5" href="https://www.facebook.com/profile.php?id=61554246981174"><img src="/img/facebook.svg" /></a>
+                <a class="tw-inline-block tw-w-5 tw-h-5" href="https://www.instagram.com/ottava.io/"><img src="/img/instagram.svg" /></a>
+                <a class="tw-inline-block tw-w-5 tw-h-5" href="https://www.youtube.com/@Ottava_io"><img src="/img/youtube.svg" /></a>
+            </div>
+            <div id="footer-lower-right">
+                <div>
+                    <div id="copyright">
+                        <span>&copy;</span>
+                        <span> Potix Corporation. All rights reserved.</span>
+                    </div>
+                </div>
+                <div class="divider-r"></div>
+                <div class="terms-policy">
+                    <a href="https://ottava.io/terms">Terms</a>
+                    <a href="https://ottava.io/privacy">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+      </div>
+    </footer>
+    
+    <script src="https://blog.ottava.io/js/jquery-1.10.2.min.js"></script>
+    <script src="https://blog.ottava.io/js/jquery.sticky.js"></script>
+    <script src="https://blog.ottava.io/js/main.js"></script>
+  </body>
+
+</html>
